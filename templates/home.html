@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webscraping Videojuegos</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+        * {
+            box-sizing: border-box;
+            margin:5px;
+            padding: 0;
+            text-align: center;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: olivedrab;
+        }
+
+        select{
+            margin:5px;
+            padding: 10px;
+        }
+
+        input{
+            margin:5px;
+            padding: 10px;
+        }
+
+        #button-search{
+            background: whitesmoke;
+            color: olivedrab;
+            padding: 20px;
+            text-emphasis: bold;
+        }
+
+
+    </style>
+    </head>
+    <body id="home">
+        <h1> Webscraping Videojuegos </h1>
+        
+        <form method="post" >
+            <p> Seleccione la consola: </p>
+            <select id="consolas" name="consolas">
+                <option value="PS3">PS3</option>
+                <option value="PS4">PS4</option>
+                <option value="PS5">PS5</option>
+                <option value="Xbox">Xbox</option>
+                <option value="Xbox One">Xbox One</option>
+                <option value="Nintendo">Nintendo</option>
+                <option value="PC">PC</option>
+            </select>
+
+            <p> Introduzca el videojuego: </p>
+            <input type="text" id="juego" name="juego">
+            <br>
+
+            <p> Seleccione la tienda: </p>
+            <select id="tienda" name="tienda">
+                <option value="GAME">Game</option>
+                <option value="FNAC">Fnac</option>
+                <option value="CARREFOUR">Carrefour</option>
+            </select>
+            <br>
+            <input type="submit" id="button-search">
+        </form>
+
+    </body>
+</html>
